@@ -488,7 +488,7 @@ module.exports = function(grunt) {
     'file_append',
     'compress',
     'i18n',
-    'htmllint'
+    //'htmllint'
   ]);
 
   // runs with just grunt command
