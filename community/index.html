@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="p5.js a JS client-side library for creating graphic and interactive experiences, based on the core principles of Processing.">
     <title tabindex="1">community | p5.js</title>
-    <link rel="stylesheet" href="/../assets/css/all.css">
-    <script src="//fast.fonts.net/jsapi/5ace315e-3b19-4568-9e85-5bfcb29004c0.js"></script>
+    <link rel="stylesheet" href="/assets/css/all.css?v=0e8127">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="/../assets/img/favicon.ico">
     <link rel="icon" href="/../assets/img/favicon.ico">
@@ -17,38 +18,9 @@
     <script src="/../assets/js/vendor/ace-nc/ace.js"></script>
     <script src="/../assets/js/vendor/ace-nc/mode-javascript.js"></script>
     <script src="/../assets/js/vendor/prism.js"></script>
-    <script src="/../assets/js/init.js"></script>
+    <script src="/assets/js/init.js?v=97b4f7"></script>
 
 
-    <style>
-    @font-face {
-      font-family: myFirstFont;
-      src: url(assets/p5_featured/nea-p5js/assets/Museo_Slab_500_2.otf);
-    }
-    #top {
-      font-family: myFirstFont !important;
-      color: white;
-      font-size: 12px;
-      padding: 7px;
-      padding-left: 20px;
-      line-height: 20px;
-      background-color: #ED225D;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: 5;
-      display: none;
-    }
-
-    #top a {
-      color: white !important;
-      text-decoration: underline;
-    }
-
-
-    footer { padding-bottom: 26px; }
-    </style>
   </head>
   <body>
 
@@ -61,6 +33,8 @@
         <li><a href='#' lang='en' data-lang='en'>English</a></li>
         <li><a href='#' lang='es' data-lang='es'>Español</a></li>
         <li><a href='#' lang='zh-Hans' data-lang='zh-Hans'>简体中文</a></li>
+        <li><a href='#' lang='ko' data-lang='ko'>한국어</a></li>
+        <li><a href='#' lang='hi' data-lang='hi'>हिन्दी</a></li>
       </ul>
     </div>    <!-- .container -->
     <div class="container">
@@ -68,15 +42,9 @@
       <!-- logo -->
       <header id="lockup">
         <a href="/">
-          <img src="../assets/img/p5js.svg" alt="p5 homepage" id="logo_image" class="logo" />
+          <img src="/../assets/img/p5js.svg" alt="p5 homepage" id="logo_image" class="logo" />
           <div id="p5_logo"></div>
         </a>
-        <p class='tagline'>Processing fun times JavaScript quirkiness</p>
-        <p class='tagline'>Processing simplicity times JavaScript flexibility</p>
-        <p class='tagline'>Processing intuition times JavaScript power</p>
-        <p class='tagline'>Processing creativity times JavaScript dynamism</p>
-        <p class='tagline'>Processing community times JavaScript community</p>
-        <p class='tagline'>the power of Processing times the reach of JavaScript</p>
       </header>
       <!-- close logo -->
 
@@ -87,29 +55,35 @@
   
   <!-- site navigation -->
   <div class="column-span">
-    <nav>
+    <nav class="sidebar-menu-nav-element">
       <h2 id="menu-title" class="sr-only">Site Navigation</h2>
-      <ul id="menu" aria-labelledby="menu-title">
+      <input class="sidebar-menu-btn" type="checkbox" id="sidebar-menu-btn" />
+      <label class="sidebar-menu-icon" for="sidebar-menu-btn"><span class="sidebar-nav-icon"></span></label>
+      <ul id="menu" class="sidebar-menu" aria-labelledby="menu-title">
         <li><a href="/">Home</a></li>
         <li><a href="https://editor.p5js.org">Editor</a></li>
         <li><a href="/download/">Download</a></li>
+        <li><a href="/download/support.html">Donate</a></li>
         <li><a href="/get-started/">Get Started</a></li>
         <li><a href="/reference/">Reference</a></li>
         <li><a href="/libraries/">Libraries</a></li>
         <li><a href="/learn/">Learn</a></li>
+        <li><a href="/teach/">Teach</a></li>
         <li><a href="/examples/">Examples</a></li>
         <li><a href="/books/">Books</a></li>
         <li><a href="/community/">Community</a></li>
+        <li><a href="https://showcase.p5js.org">Showcase</a></li>
         <li><a href="https://discourse.processing.org/c/p5js" target=_blank class="other-link">Forum</a></li>
         <li><a href="http://github.com/processing/p5.js" target=_blank class="other-link">GitHub</a></li>
         <li><a href="http://twitter.com/p5xjs" target=_blank class="other-link">Twitter</a></li>
+        <li><a href="https://www.instagram.com/p5xjs/" target=_blank class="other-link">Instagram</a></li>
+        <li><a href="https://discord.gg/SHQ8dH25r9" target=_blank class="other-link">Discord</a></li>
       </ul>
     </nav>
   </div>
 
   <div class="column-span">
-
-    <main id="content" >
+    <main id="content">
       <h1>Community</h1>
       <div class="community-statement">
         <h2 class="community-title">p5.js Community Statement </h2>
@@ -146,27 +120,27 @@
         <ul aria-labelledby="in-future" class="bullets list_view">
           <li>The future is now.</li>
         </ul>
-
-        <h3 id="sharing">Sharing</h3>
-        <p>This statement is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons license</a>. Please feel free to share and remix with attribution.</p>
+        <br>
+        <h3 id="notes" class='sr-only'>Notes</h3>
+        <p>Please also visit our  <a href="https://github.com/processing/p5.js/blob/main/CODE_OF_CONDUCT.md#p5js-code-of-conduct">p5.js Code of Conduct</a>. The p5.js Community Statement is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons license</a>. Please feel free to share and remix with attribution.</p>
       </div>
 
       <h2 id="contribute">Contribute</h2>
       <p>Our community is always looking for enthusiasts to help in all different ways.</p>
 
-      <p><b>Develop.</b> <a href="https://github.com/processing/p5.js" target="blank_">GitHub</a> is the main place where code is collected, issues are documented, and discussions about code are had. Check out the  <a href="https://github.com/processing/p5.js/blob/master/developer_docs/" target="blank_"> development tutorial </a>  to get started, or  <a href="../libraries/#create-your-own"> create your own library. </a></p>
+      <p><b>Develop.</b> <a href="https://github.com/processing/p5.js" target="blank_">GitHub</a> is the main place where code is collected, issues are documented, and discussions about code are had. Check out the  <a href="https://p5js.org/contributor-docs" target="blank_"> development tutorial </a>  to get started, or  <a href="../libraries/#create-your-own"> create your own library. </a></p>
 
-      <p><b>Document.</b> Everyone loves documentation. Help is needed <a href="https://github.com/processing/p5.js-website/wiki/Adding-examples" target="blank_">porting examples</a>, and<a href="https://github.com/processing/p5.js/blob/master/developer_docs/inline_documentation.md#setup" target="blank_"> adding documentation</a>, and creating tutorials.</p>
+      <p><b>Document.</b> Everyone loves documentation. Help is needed <a href="https://github.com/processing/p5.js-website/blob/main/contributor_docs/Adding_examples.md" target="blank_">porting examples</a>, and<a href="https://p5js.org/contributor-docs/#/inline_documentation" target="blank_"> adding documentation</a>, and creating tutorials.</p>
 
       <p><b>Teach.</b> Teach a workshop, a class, a friend, a collaborator! Tag @p5xjs on Twitter and we will do our best to share what you're doing.</p>
 
-      <p><b>Create.</b> p5.js is looking for designers, artists, coders, programmers to bring your creative and amazing work to show on the front page and inspire other people. Submit your work to <a href="mailto:feature@p5js.org">hello@p5js.org</a>.</p>
+      <p><b>Create.</b> p5.js is looking for designers, artists, coders, programmers to bring your creative and amazing work to show on the front page and inspire other people. Submit your work to <a href="mailto:hello@p5js.org">hello@p5js.org</a>.</p>
 
       <p><b>Donate.</b> p5.js is free and open source and made by artists. Help support the development of p5.js through a donation to the <a href="https://processingfoundation.org/support">Processing Foundation</a>.</p>
 
 
       <h2>p5.js Contributors Conference</h2>
-      <p>While most work happens online, we also convene IRL. We've had two contributors conferences held at the <a href="http://studioforcreativeinquiry.org">Frank-Ratchye STUDIO for Creative Inquiry</a> at Carnegie Mellon University in Pittsburgh, PA. Artists, designers, developers, educators, and got together to advance the p5.js project.
+      <p>While most work happens online, we also convene IRL. We've had two contributors conferences held at the<a href="http://studioforcreativeinquiry.org">Frank-Ratchye STUDIO for Creative Inquiry</a> at Carnegie Mellon University in Pittsburgh, PA. Artists, designers, developers, educators, and got together to advance the p5.js project.
       </p>
       <h2 id="conferences" class="sr-only">Past Conferences</h2>
       <ul aria-labelledby="conferences" class="list_view bullets">
@@ -184,13 +158,13 @@
           <p>Enter your email address to receive occasional updates from the Processing Foundation.</p>
           <div class="email-octopus-form-row">
             <input type="email" name="emailAddress" placeholder="email" class="email-octopus-email-address">
+            <button type="submit">subscribe</button>
           </div>
           <div class="email-octopus-form-row-hp" aria-hidden="true">
             <input type="text" name="hp537b6ec8-d123-11e6-8561-06ead731d453" tabindex="-1">
           </div>
           <div class="email-octopus-form-row-subscribe">
             <input type="hidden" name="successRedirectUrl" class="email-octopus-success-redirect-url" value="">
-            <button type="submit">subscribe</button>
           </div>
         </form>
       </div>
@@ -201,8 +175,9 @@
     
     <footer>
       <h2 class="sr-only">Credits</h2>
-      <p> p5.js was created by <a href='http://lauren-mccarthy.com' target="_blank">Lauren McCarthy</a> and is developed by a community of collaborators, with support from the <a href="http://processing.org/foundation/" target="_blank">Processing Foundation</a>  and 
-      <a href="http://itp.nyu.edu/itp/" target="_blank">NYU ITP</a>. Identity and graphic design by <a href="http://jereljohnson.com/" target="_blank">Jerel Johnson</a>. <a href="/copyright.html">&copy; Info.</a></p>
+      <p>
+        p5.js is currently led by <a href='http://qianqian-ye.com/' target="_blank">Qianqian Ye</a> and was created by <a href='https://lauren-mccarthy.com' target="_blank">Lauren Lee McCarthy</a>. p5.js is developed by a community of collaborators, with support from the <a href="https://processingfoundation.org/" target="_blank">Processing Foundation</a> and <a href="https://itp.nyu.edu/itp/" target="_blank">NYU ITP</a>. Identity and graphic design by <a href="https://jereljohnson.com/" target="_blank">Jerel Johnson</a>. <a href="/copyright.html">&copy; Info</a>.
+      </p>
     </footer>
 
   </div> <!-- end column-span -->
@@ -213,7 +188,6 @@
   <p class="clearfix"> &nbsp; </p>
   
   <object type="image/svg+xml" data="../assets/img/thick-asterisk-alone.svg" id="asterisk-design-element" aria-hidden="true">
-       *<!-- to do: add fallback image in CSS -->
   </object>
 
 </div><!-- end id="get-started-page"  -->
@@ -225,18 +199,20 @@
     <nav id="family" aria-labelledby="processing-sites-heading">
       <h2 id="processing-sites-heading" class="sr-only">Processing Sister Sites</h2>
       <ul id="processing-sites" aria-labelledby="processing-sites-heading">
-        <li><a href="http://processing.org">Processing</a></li>
+        <li><a href="https://processing.org">Processing</a></li>
         <li><a class="here" href="/">p5.js</a></li>
-        <li><a href="http://py.processing.org/">Processing.py</a></li>
-        <li><a href="http://android.processing.org/">Processing for Android</a></li>
-        <li><a href="http://pi.processing.org/">Processing for Pi</a></li>
+        <li><a href="https://py.processing.org/">Processing.py</a></li>
+        <li><a href="https://android.processing.org/">Processing for Android</a></li>
+        <li><a href="https://pi.processing.org/">Processing for Pi</a></li>
         <li><a href="https://processingfoundation.org/">Processing Foundation</a></li>
       </ul>
+      <a tabindex="1" href="#content" id="skip-to-content">Skip to main content</a>
     
-    <!--   <p class="right">
-      </p> -->
+    
     </nav>
     <script>
+    var langs = ["en","es","hi","ko","zh-Hans"];
+
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

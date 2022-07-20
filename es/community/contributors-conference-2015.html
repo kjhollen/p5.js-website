@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="p5.js a JS client-side library for creating graphic and interactive experiences, based on the core principles of Processing.">
     <title tabindex="1">community | p5.js</title>
-    <link rel="stylesheet" href="/../../assets/css/all.css">
-    <script src="//fast.fonts.net/jsapi/5ace315e-3b19-4568-9e85-5bfcb29004c0.js"></script>
+    <link rel="stylesheet" href="/assets/css/all.css?v=0e8127">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="/../../assets/img/favicon.ico">
     <link rel="icon" href="/../../assets/img/favicon.ico">
@@ -17,38 +18,9 @@
     <script src="/../../assets/js/vendor/ace-nc/ace.js"></script>
     <script src="/../../assets/js/vendor/ace-nc/mode-javascript.js"></script>
     <script src="/../../assets/js/vendor/prism.js"></script>
-    <script src="/../../assets/js/init.js"></script>
+    <script src="/assets/js/init.js?v=97b4f7"></script>
 
 
-    <style>
-    @font-face {
-      font-family: myFirstFont;
-      src: url(assets/p5_featured/nea-p5js/assets/Museo_Slab_500_2.otf);
-    }
-    #top {
-      font-family: myFirstFont !important;
-      color: white;
-      font-size: 12px;
-      padding: 7px;
-      padding-left: 20px;
-      line-height: 20px;
-      background-color: #ED225D;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: 5;
-      display: none;
-    }
-
-    #top a {
-      color: white !important;
-      text-decoration: underline;
-    }
-
-
-    footer { padding-bottom: 26px; }
-    </style>
   </head>
   <body>
 
@@ -61,6 +33,8 @@
         <li><a href='#' lang='en' data-lang='en'>English</a></li>
         <li><a href='#' lang='es' data-lang='es'>Español</a></li>
         <li><a href='#' lang='zh-Hans' data-lang='zh-Hans'>简体中文</a></li>
+        <li><a href='#' lang='ko' data-lang='ko'>한국어</a></li>
+        <li><a href='#' lang='hi' data-lang='hi'>हिन्दी</a></li>
       </ul>
     </div>    <!-- .container -->
     <div class="container">
@@ -68,41 +42,42 @@
       <!-- logo -->
       <header id="lockup">
         <a href="/es/">
-          <img src="../../assets/img/p5js.svg" alt="p5 homepage" id="logo_image" class="logo" />
+          <img src="/../../assets/img/p5js.svg" alt="p5 homepage" id="logo_image" class="logo" />
           <div id="p5_logo"></div>
         </a>
-        <p class='tagline'>la diversión de Processing x la excentricidad de JavaScript</p>
-        <p class='tagline'>la simplicidad de Processing x la flexibilidad de JavaScript</p>
-        <p class='tagline'>la intuición de Processing x el poder de JavaScript</p>
-        <p class='tagline'>la creatividad de Processing x el dinamismo de JavaScript</p>
-        <p class='tagline'>la comunidad de Processing x la comunidad de JavaScript</p>
-        <p class='tagline'>el poder de Processing x el alcance de JavaScript</p>
       </header>
       <!-- close logo -->
 
       
 
-<div id="libraries-page">
+<div id="community-page">
 
   
   <!-- site navigation -->
   <div class="column-span">
-    <nav>
+    <nav class="sidebar-menu-nav-element">
       <h2 id="menu-title" class="sr-only">Navegación del sitio</h2>
-      <ul id="menu" aria-labelledby="menu-title">
+      <input class="sidebar-menu-btn" type="checkbox" id="sidebar-menu-btn" />
+      <label class="sidebar-menu-icon" for="sidebar-menu-btn"><span class="sidebar-nav-icon"></span></label>
+      <ul id="menu" class="sidebar-menu" aria-labelledby="menu-title">
         <li><a href="/es/">Inicio</a></li>
         <li><a href="https://editor.p5js.org">Editor</a></li>
         <li><a href="/es/download/">Descargar</a></li>
+        <li><a href="/es/download/support.html">Donar</a></li>
         <li><a href="/es/get-started/">Empezar</a></li>
         <li><a href="/es/reference/">Referencia</a></li>
         <li><a href="/es/libraries/">Bibliotecas</a></li>
         <li><a href="/es/learn/">Aprender</a></li>
+        <li><a href="/es/teach/">Enseñar</a></li>
         <li><a href="/es/examples/">Ejemplos</a></li>
         <li><a href="/es/books/">Libros</a></li>
         <li><a href="/es/community/">Comunidad</a></li>
+        <li><a href="https://showcase.p5js.org">Showcase</a></li>
         <li><a href="https://discourse.processing.org/c/p5js" target=_blank class="other-link">Foro</a></li>
         <li><a href="http://github.com/processing/p5.js" target=_blank class="other-link">GitHub</a></li>
         <li><a href="http://twitter.com/p5xjs" target=_blank class="other-link">Twitter</a></li>
+        <li><a href="https://www.instagram.com/p5xjs/" target=_blank class="other-link">Instagram</a></li>
+        <li><a href="https://discord.gg/SHQ8dH25r9" target=_blank class="other-link">Discord</a></li>
       </ul>
     </nav>
   </div>
@@ -110,34 +85,34 @@
   <div class="column-span">
 
     <main id="content" >
-      <h1>Conferencia de contribuidores 2015</h1>
+      <h1>Conferencia de contribuyentes 2015</h1>
 
 
       <div class="contributors-subsection">
       <h2>Frank-Ratchye STUDIO for Creative Inquiry<br>Carnegie Mellon University<br>Mayo 25-31</h2>
 
       <p>Un diverso grupo de aproximadamente 30 participantes se reunieron durante una semana en el <a href='http://studioforcreativeinquiry.org' target=_blank >Frank-Ratchye
-      STUDIO for Creative Inquiry</a>Photos by Taeyoon Choi
+      STUDIO for Creative Inquiry</a>, haciendo avances en el código, la documentación y las herramientas de extensión para la comunidad en torno al ambiente de programación p5.js. Los participantes vinieron de lugares tan distantes como Hong Kong, Seattle, Los Angeles, Boston y New York. La mayoría eran profesionales que trabajan en los campos de tecnología creativa, diseño de interacciónn, y artes mediales, pero el grupo también incluyó a una media docena de estudiantes de pregrado y posgrado de las escuelas de Arte y Arquitectura de Carnegie Mellon University.
       </p>
       </div>
 
-      <img src="../../assets/img/community/2015_1.jpg" alt='Diverse group of participants smile and make a p5 sign with their hands"'/>
-      <img src="../../assets/img/community/2015_3.jpg" alt='Woman presenting the p5.js community statement from her laptop"'/>
-      <img src="../../assets/img/community/2015_4.jpg" alt='Woman expressively speaks into a microphone while two male collaborators look on"'/>
-      <img src="../../assets/img/community/2015_5.jpg" alt='Participants attentively smile towards the front of the class"'/>
-      <img src="../../assets/img/community/2015_6.jpg" alt='Woman reads about p5.js into a microphone to three female students"'/>
-      <img src="../../assets/img/community/2015_7.jpg" alt='Participants sit in a circle around a white board with sticky notes on it while a female student speaks into a microphone"'/>
+      <img src="../../assets/img/community/2015_1.jpg" alt='Un diverso grupo de participantes sonríe y hace un signo de p5 con sus manos"'/>
+      <img src="../../assets/img/community/2015_3.jpg" alt='Mujer presenta la Declaración de comunidad en torno a p5.js utilizando su computadora"'/>
+      <img src="../../assets/img/community/2015_4.jpg" alt='Mujer al micrófono habla expresivamente mientras que dos colaboradores observan"'/>
+      <img src="../../assets/img/community/2015_5.jpg" alt='Participantes sonríen con atención al frente del aula"'/>
+      <img src="../../assets/img/community/2015_6.jpg" alt='Mujer al micrófono lee sobre p5.js into a tres estudiantas"'/>
+      <img src="../../assets/img/community/2015_7.jpg" alt='Participantes se sientan en un círculo alrededor de una pizarra con notas de colores mientras que una estudianta habla al micrófono"'/>
       <img src="../../assets/img/community/2015_8.jpg" alt='Participants sit around a table looking at each others laptops and compare code "'/>
-      <img src="../../assets/img/community/2015_9.jpg" alt='Whiteboard with different colored sticky and written notes about programming "'/>
-      <img src="../../assets/img/community/2015_10.jpg" alt='Woman speaking into a microphone about valuing different skill sets while a group of participants with laptops look at her powerpoint in a classroom"'/>
-      <img src="../../assets/img/community/2015_11.jpg" alt='Woman speaks at a podium in an auditorium while three participants sit on the stage and another three are skyping in on the stage screen"'/>
-      <img src="../../assets/img/community/2015_12.jpg" alt='Overhead view of a classroom with participants working on their laptops"'/>
-      <img src="../../assets/img/community/2015_13.jpg" alt='Five people having a discussion in a circle"'/>
-      <img src="../../assets/img/community/2015_14.jpg" alt='Five people in a circle with their laptops sharing their notes"'/>
-      <img src="../../assets/img/community/2015_15.jpg" alt='Man in a classroom with a microphone speaking out to a group of participants"'/>
-      <img src="../../assets/img/community/2015_2.jpg" alt='Participants jump, smile and throw their hands in the air on a green lawn"'/>
+      <img src="../../assets/img/community/2015_9.jpg" alt='Pizarra con notas de distintos colores y notas sobre programación "'/>
+      <img src="../../assets/img/community/2015_10.jpg" alt='Mujer al micrófono habla sobre la importancia de valorar distintas habilidades mientras que un grupo de participantes en sus computadoras observan su presentación en un aula "'/>
+      <img src="../../assets/img/community/2015_11.jpg" alt='Mujer habla desde un podio en un auditorio mientras que tres participantes se sientan en el escenario y otros tres participan en una videollamada "'/>
+      <img src="../../assets/img/community/2015_12.jpg" alt='Vista aérea de un aula con participantes trabajando en sus computadoras portátiles "'/>
+      <img src="../../assets/img/community/2015_13.jpg" alt='Cinco personas discutiendo en un círculo "'/>
+      <img src="../../assets/img/community/2015_14.jpg" alt='Cinco personas en un círculo con sus computadoras portátiles compartiendo notas "'/>
+      <img src="../../assets/img/community/2015_15.jpg" alt='Hombe al micrófono habla a un grupo de participantes dentro de un aula "'/>
+      <img src="../../assets/img/community/2015_2.jpg" alt='Participantes saltan, sonríen y alzan sus manos en el aire sobre un campo de césped"'/>
 
-      <p><a href="https://www.flickr.com/photos/80913365@N04/albums/72157653238862069/with/17613092994/" target="_blank"></a></p>
+      <p><a href="https://www.flickr.com/photos/80913365@N04/albums/72157653238862069/with/17613092994/" target="_blank">Fotos por Taeyoon Choi</a></p>
 
       <div class="contributors-subsection">
       <h2>Participantes</h2>
@@ -230,9 +205,9 @@
       <div class="contributors-subsection">
       <h2>Apoyo</h2>
 
-      <p>Nuestra conferencia de contribuidores fue realizada en el <a href='http://studioforcreativeinquiry.org'>Frank-Ratchye STUDIO for Creative Inquiry</a> en Carnegie Mellon University, un laboratorio académico para investigación atípica, anti-disciplinaria, e inter-institucional, en la intersección del arte, la ciencia, la tecnología y la cultura.</p>
+      <p>Nuestra conferencia de contribuyentes fue realizada en el <a href='http://studioforcreativeinquiry.org'>Frank-Ratchye STUDIO for Creative Inquiry</a> en Carnegie Mellon University, un laboratorio académico para investigación atípica, anti-disciplinaria, e inter-institucional, en la intersección del arte, la ciencia, la tecnología y la cultura.</p>
 
-      <p>Esto evento fue posible gracias a una beca del <a href="http://arts.gov/" target="_blank">National Endowment for the Arts</a>,
+      <p>Este evento fue posible gracias a fondos del <a href="http://arts.gov/" target="_blank">National Endowment for the Arts</a>,
       y el generoso apoyo de <a href="https://tisch.nyu.edu/itp" target="_blank">NYU Interactive Telecommunications Program</a>
       (ITP), <a href='http://foundation.processing.org' target=_blank>Processing Foundation</a>, <a href="http://theartificial.nl/" target="_blank">TheArtificial</a>, <a href="http://bocoup.com/" target="_blank">Bocoup</a>, <a href="http://tinysubversions.com/" target="_blank">Darius Kazemi</a>, y <a href="http://www.du.edu/ahss/edp/" target="_blank">Emergent Digital Practices | University of Denver</a><br><b>¡Gracias!</b></p>
 
@@ -252,8 +227,9 @@
     
     <footer>
       <h2 class="sr-only">Créditos</h2>
-      <p> p5.js fue creado por <a href='http://lauren-mccarthy.com' target="_blank">Lauren McCarthy</a> y es desarrollado por una comunidad de colaboradores, con apoyo de <a href="http://processing.org/foundation/" target="_blank">Processing Foundation</a>  y 
-      <a href="http://itp.nyu.edu/itp/" target="_blank">NYU ITP</a>. Identidad y diseño gráfico por <a href="http://jereljohnson.com/" target="_blank">Jerel Johnson</a>. <a href="/es/copyright.html">&copy; Info.</a></p>
+      <p>
+        p5.js está actualmente dirigido por <a href='http://qianqian-ye.com/' target="_blank">Qianqian Ye</a> y fue creado por <a href='https://lauren-mccarthy.com' target="_blank">Lauren Lee McCarthy</a>. p5.js es desarrollado por una comunidad de colaboradores, con el apoyo de <a href="https://processingfoundation.org/" target="_blank">Processing Foundation</a> y <a href="https://itp.nyu.edu/itp/" target="_blank">NYU ITP</a>. Identidad y diseño gráfico por <a href="https://jereljohnson.com/" target="_blank">Jerel Johnson</a>. <a href="/es/copyright.html">&copy; Info</a>.
+      </p>
     </footer>
 
   </div> <!-- end column-span -->
@@ -264,7 +240,6 @@
   <p class="clearfix"> &nbsp; </p>
   
   <object type="image/svg+xml" data="../../assets/img/thick-asterisk-alone.svg" id="asterisk-design-element" aria-hidden="true">
-       *<!-- to do: add fallback image in CSS -->
   </object>
 
 </div><!-- end id="get-started-page"  -->
@@ -276,18 +251,20 @@
     <nav id="family" aria-labelledby="processing-sites-heading">
       <h2 id="processing-sites-heading" class="sr-only">Processing Sister Sites</h2>
       <ul id="processing-sites" aria-labelledby="processing-sites-heading">
-        <li><a href="http://processing.org">Processing</a></li>
+        <li><a href="https://processing.org">Processing</a></li>
         <li><a class="here" href="/es/">p5.js</a></li>
-        <li><a href="http://py.processing.org/">Processing.py</a></li>
-        <li><a href="http://android.processing.org/">Processing for Android</a></li>
-        <li><a href="http://pi.processing.org/">Processing for Pi</a></li>
+        <li><a href="https://py.processing.org/">Processing.py</a></li>
+        <li><a href="https://android.processing.org/">Processing for Android</a></li>
+        <li><a href="https://pi.processing.org/">Processing for Pi</a></li>
         <li><a href="https://processingfoundation.org/">Processing Foundation</a></li>
       </ul>
+      <a tabindex="1" href="#content" id="skip-to-content">Skip to main content</a>
     
-    <!--   <p class="right">
-      </p> -->
+    
     </nav>
     <script>
+    var langs = ["en","es","hi","ko","zh-Hans"];
+
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
