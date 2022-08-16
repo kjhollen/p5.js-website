@@ -4,6 +4,10 @@ api_version: 1
 
 handlers:
 
+# rule to run php for download page
+- url: /download/release.php
+  script: dist/download/release.php
+
 # Handle the main page by serving the index page.
 # Note the $ to specify the end of the path, since app.yaml does prefix matching.
 - url: /$
